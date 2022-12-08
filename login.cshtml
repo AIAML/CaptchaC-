@@ -1,0 +1,30 @@
+<form class="needs-validation" novalidate method="post">
+
+    <div class="form-group">
+        <input type="text" id="Username" name="Username" class="form-control text-left" placeholder="username" dir="ltr" required autofocus>
+    </div>
+    <div class="form-group">
+        <input type="password" id="password" name="password" class="form-control text-left" placeholder="password" dir="ltr" required>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-lg-4">
+                <input type="text" id="Captcha" name="Captcha" class="form-control text-left" placeholder="" dir="ltr" required>
+            </div>
+            <div class="col-lg-8">
+                <img alt="Captcha" src="@Url.Action("CaptchaImage")" title="" />
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <button class="btn btn-primary btn-block">ورود</button>
+    <hr>
+    <p class="text-muted">
+        <button type="button" class="btn btn-success">
+           
+        </button>
+    </p>
+    <hr>
+</form>
